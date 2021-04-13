@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="14dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        general-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!--            Tonos de conversacion-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="15dp">
+                    <TextView
+                        android:id="@+id/tv_MainText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tonos de conversación"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/tv_SecondText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reproducir sonidos para los mejores entrantes y salientes."
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGray"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Notificaciones de Mensaje"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorVerdeTexto"/>
+            <ListView
+                android:id="@+id/lv_Mensajes"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Notificaciones de grupo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorVerdeTexto"/>
+            <ListView
+                android:id="@+id/lv_Grupos"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scrollbars="none"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
